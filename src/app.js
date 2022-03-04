@@ -5,9 +5,11 @@ const logger = require('morgan');
 const csrf = require('csurf');
 
 const indexRouter = require('./routes/index');
+const { default: helmet } = require('helmet');
 
 const app = express();
 
+app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
