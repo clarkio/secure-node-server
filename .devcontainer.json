@@ -1,0 +1,10 @@
+{
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openBrowser",
+      "protocol": "https"
+    }
+  }
+}

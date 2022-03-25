@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "create-cert": "node certificate/create"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -12,5 +13,8 @@
     "express": "~4.17.3",
     "helmet": "^5.0.2",
     "morgan": "~1.10.0"
+  },
+  "devDependencies": {
+    "pem": "^1.14.6"
   }
 }
